@@ -18,11 +18,13 @@ button {
 }
 
 footer {
-    margin-top: 15rem;
-    font-family: 'Sigmar', cursive;
-    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    color: #088395;
+    margin-top: 3rem;
+    padding: 10px;
 }
 
-.world {
+.worldText {
     color: #ECC9EE;
 }
+
