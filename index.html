@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+<head id = "head">
     <title>Hello World</title>
 </head>
 <body>
-    <h1>Hello</br><span class="world">World!</span></h1>
-    <button>ENTER</button>
-    <footer>Sancti 2023</footer>
+    <h1>Hello</br><span class="worldText">World!</span></h1>
+    <button onclick="addCSS()">Toggle Me</button>
+    <footer>
+        <p>Sancti 2023</p>
+    </footer>
+    <script>
+        let counter = 0;
+        function addCSS() {
+            counter++;
+            if (counter % 2 !== 0) {
+                document.getElementById("head").innerHTML = ' <title>Hello World</title> \n <link rel="stylesheet" href="style.css"> \n <link rel="preconnect" href="https://fonts.googleapis.com"> \n <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> \n <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet"> ';
+            } else {
+                document.getElementById("head").innerHTML = ' <title>Hello World</title> ';
+            }
+        }
+    </script>
+    
 </body>
 </html>
