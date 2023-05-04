@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Sigmar', cursive;
+    color: #088395;
+    font-weight: 400;
+    font-size: 10rem;
+}
+
+button {
+    font-family: 'Sigmar', cursive;
+    color: black;
+    font-size: 2rem;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 15rem;
+    font-family: 'Sigmar', cursive;
+    color: white;
+}
+
+.world {
+    color: #ECC9EE;
+}
